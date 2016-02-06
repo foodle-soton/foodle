@@ -16,6 +16,7 @@ public class SotonMenuScraper {
 
     }
 
+    // Reads URLs and venues from "Venues.txt" - "Arlott,[urlgoeshere]" gets stored in outlets as Arlott and the url
     public void getVenuesURLs() throws IOException {
         BufferedReader br = null;
         try {
@@ -24,9 +25,15 @@ public class SotonMenuScraper {
             System.err.println("Venues.txt not found, please ensure it exists");
         }
         String myString;
+        String venue;
+        String url;
+        // Splits URL and stores
         while(br.ready()){
             myString = br.readLine();
-            
+            venue = myString.split(",")[0];
+            url = myString.split(",")[1];
+            outlets.put(venue, url);
+
         }
     }
 

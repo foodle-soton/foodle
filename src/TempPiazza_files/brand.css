@@ -1,0 +1,414 @@
+body {
+	position: relative;
+	background: none repeat scroll 0% 0% rgb(204, 204, 204);
+	color: rgb(51, 51, 51);
+	font-family: Lucida Sans, serif;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+#mobilemenubutton {
+	display: none;
+}
+
+#accessbar {
+	font-size: 62.5%;
+	background: none repeat scroll 0% 0% rgb(204, 204, 204);
+	margin: auto;
+	padding: 5px 0px 5px 20px;
+	overflow: hidden;
+	list-style: none outside none;
+	font-size: 1.1em;
+	font-family: vedana, sans-serif;
+	color: rgb(51, 51, 51);
+	width: 940px;
+	height: 24px;
+	margin-top: 0px !important;
+	font-family: verdana, sans-serif;
+}
+
+#accessbar ul {
+	font-size: 62.5%;
+	padding: 5px 0px 5px 20px;
+	overflow: hidden;
+	list-style: none outside none;
+	font-size: 1.1em;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	display: block;
+	list-style-position: outside !important;
+}
+
+#accessbar li {
+	font-size: 62.5%;
+	border-right: 1px solid rgb(51, 51, 51);
+	display: inline;
+	padding-right: 0.8ex;
+	margin-right: 0.8ex;
+	margin-top: 0px !important;
+	padding-top: 0px !important;
+}
+
+#accessbar li.last {
+	border-right: 0px;
+}
+
+#accessbar li a {
+	font-size: 0.8em;
+	text-decoration: none;
+}
+
+#accessbar li a:hover {
+	text-decoration: underline;
+}
+
+#sitetitle {
+	font-size: 62.5%;
+	overflow: hidden;
+	font-size: 62.5%;
+	background: none repeat scroll 0% 0% rgb(255, 255, 255);
+	width: 940px;
+	margin: 0px auto;
+	height: 104px;
+	border-bottom: solid 3px rgb(0, 83, 85);
+	position: relative;
+}
+
+#sitetitle h1 {
+	background: url("http://www.southampton.ac.uk/images/bg_logo_small.png") no-repeat scroll 0% 0% transparent;
+	width: 216px;
+	text-indent: -1000em;
+	color: rgb(204, 204, 204);
+	float: right;
+	height: 83px;
+	margin: 21px 35px 0px 0px;
+	display: inline;
+	padding: 0px;
+}
+
+#pagetitle {
+	font-size: 62.5%;
+	overflow: hidden;
+	background: none repeat scroll 0% 0% rgb(240, 240, 240);
+	width: 920px;
+	margin: 0px auto;
+	padding: 10px 10px 5px;
+	height: 42px;
+	border-bottom: 1px solid rgb(204, 204, 204);
+	position: relative;
+}
+
+#pagetitle h2 {
+	font-family: Lucida Sans, sans-serif;
+	font-size: 2.8em;
+	margin: 0px;
+	margin-left: 240px;
+	font-weight: 400;
+	margin-bottom: 8px;
+	padding: 0px;
+}
+
+#pagemenu {
+	height: auto;
+	font-size: 100%;
+	position: absolute;
+	top: -141px;
+	left: 20px;
+	width: 210px;
+	background-color: transparent;
+	background: none repeat scroll 0% 0% rgb(255, 255, 255);
+	font-family: Lucida Sans,serif;
+	color: rgb(51, 51, 51);
+	margin-bottom: 1em;
+	z-index: 500;
+	list-style: none outside none;
+	overflow-x: hidden;
+}
+
+#pagemenu ul {
+	font-family: Lucida Sans, serif;
+	list-style-position: outside !important;
+	list-style: none outside none;
+	font-size: 1em !important;
+	padding: 0px;
+	font-size: 100%;
+	margin-left: 0px;
+}
+
+#pagemenu ul li {
+	border-color: rgb(102, 170, 172);
+	list-style: none outside none;
+	border-bottom: 1px solid rgb(102, 170, 172);
+	font-size: 100%;
+	padding-bottom: 0px;
+}
+
+#pagemenu ul li a {
+	font-size: 100%;
+	background-color: rgb(0, 114, 117);
+	color: rgb(255, 255, 255);
+	display: block;
+	padding: 7px 9px;
+	font-weight: normal;
+	text-decoration: none;
+	font-family: Lucida Sans, serif;
+	margin: 0px;
+}
+
+#pagemenu ul li a:hover {
+	background-color: rgb(0, 83, 85);
+}
+
+#pagemenu ul li.pages {
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+#pagemenu ul li.home {
+	margin-bottom: 0px;
+	border-bottom: solid 3px rgb(102, 170, 172);
+}
+
+#pagemenu ul li.home a {
+	background-color: rgb(7, 162, 133);
+	background-image: url("http://www.southampton.ac.uk/images/nav_teal_home.gif");
+	background-repeat: no-repeat;
+	background-position: 185px 50%;
+	height: 1.125em;
+	padding-right: 39px;
+}
+
+#pagemenu ul li.home a:hover {
+	background-color: rgb(0, 83, 85);
+	background-image: url("http://www.southampton.ac.uk/images/nav_teal_home_over.gif");
+}
+
+#pagemenu ul li.sotonhome a {
+	background-color: rgb(7, 162, 133);
+	background-image: url("http://www.southampton.ac.uk/images/nav_teal_back.gif");
+	background-repeat: no-repeat;
+	background-position: 185px 50%;
+	height: 1.125em;
+	padding-right: 39px;
+}
+
+#pagemenu ul li.sotonhome a:hover {
+	background-color: rgb(0, 83, 85);
+	background-image: url("http://www.southampton.ac.uk/images/nav_teal_back_over.gif");
+}
+
+#pagemenu ul li li li a {
+	padding-left: 20px;
+	font-size: 0.9em;
+}
+
+#pagemenu ul li li li li a {
+	padding-left: 40px;
+	font-size: 0.8em;
+}
+
+#pagemenu ul li li li li li a {
+	padding-left: 60px;
+	font-size: 0.7em;
+}
+
+#pagemenu #searchbox {
+	font-size: 62.5%;
+	background-color: rgb(7, 162, 133);
+	border-bottom: 3px solid rgb(255, 255, 255);
+	margin-bottom: 0px;
+	padding: 4px;
+	list-style: none outside none;
+	list-style-position: outside !important;
+	color: rgb(51, 51, 51);
+}
+
+#pagemenu #searchbox form {
+	margin-bottom: 0px;
+}
+
+#pagemenu #searchbox fieldset {
+	border: medium none;
+	padding: 0px;
+	margin: 0px;
+}
+
+#pagemenu #searchbox fieldset #searchtext {
+	border-color: rgb(102, 170, 172);
+	border-width: 2px;
+	border-style: solid;
+	vertical-align: middle;
+	padding: 2px;
+	font-size: 1.6em;
+	color: rgb(102, 102, 102);
+	width: 170px;
+	margin-right: 5px;
+	font-family: Lucida Sans, serif;
+}
+
+#pagemenu #searchbox fieldset button {
+	width: 16px;
+	height: 16px;
+	background: url("http://www.southampton.ac.uk/images/cb3/nav_teal_search.gif") no-repeat scroll left 50% transparent;
+	border: 0px none;
+	text-indent: -1000em;
+	font-size: 0px;
+	padding-top: 16px;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+#pagemenu #searchbox fieldset #searchrad {
+	font-size: 90% !important;
+	float: left;
+	width: 198px;
+	margin: 5px 0px 3px 4px;
+}
+
+#pagemenu #searchbox fieldset label {
+	display: inline;
+	width: 6em;
+	color: rgb(255, 255, 255);
+	font-size: 1.3em !important;
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-family: Lucida Sans, serif;
+}
+
+#maincontent {
+	margin: 0px auto;
+	width: 940px;
+	background: none repeat scroll 0% 0% rgb(255, 255, 255);
+	position: relative;
+}
+
+#pagecontent {
+	font-size: 62.5%;
+	margin-left: 240px;
+	padding: 10px;
+	min-height: 85em;
+}
+
+#pagecontent p, #pagecontent td, #pagecontent dl {
+	font-family: verdana, sans-serif;
+	font-size: 1.2em;
+	margin-bottom: 1em;
+	line-height: 150%;
+	color: rgb(51, 51, 51);
+}
+
+#pagecontent h2 {
+	font-family: Lucida Sans, sans-serif;
+	font-size: 2.8em;
+	margin: 0px;
+	font-weight: 400;
+	margin-bottom: 8px;
+	padding: 0px;
+}
+
+#pagecontent h3 {
+	font-family: Lucida Sans, sans-serif;
+	font-size: 1.6em;
+	font-weight: 400;
+	margin-bottom: 1em;
+	border-top: 1px solid rgb(204, 204, 204);
+	border-bottom: 1px solid rgb(204, 204, 204);
+	margin-top: 2em;
+	padding: 5px 0px;
+}
+
+#pagecontent h4 {
+	font-family: Lucida Sans, sans-serif;
+	font-size: 1.5em;
+	margin-bottom: 1em;
+}
+
+#pagecontent a {
+	font-family: Verdana, sans-serif;
+}
+
+a:link, a:visited, ul, li, h2, h3, h4, blockquote p {
+	color: rgb(0, 83, 85);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#pagefooter {
+	margin: 0px auto;
+	width: 940px;
+	background: none repeat scroll 0% 0% rgb(255, 255, 255);
+	position: relative;
+	border-top: 1px solid rgb(204, 204, 204);
+	background-color: rgb(240, 240, 240);
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.6em;
+	font-family: sans-serif;
+}
+
+#pagefooter .copyright {
+	display: block;
+	position: relative;
+	float: left;
+	margin-left: 5px;
+}
+
+#pagefooter .info {
+	display: block;
+	position: relative;
+	float: right;
+	margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+
+	#accessbar {
+		margin: 0px;
+		padding: 0px;
+	}
+	#accessbar ul {
+		margin: 0px;
+		padding: 0px;
+		padding-left: 20px;
+	}
+
+	#pagemenu {
+		left: -210px;
+		top: -205px;
+		margin-top: 0px;
+		position: absolute;
+		z-index: 1000;
+	}
+
+	#pagetitle, #sitetitle, #maincontent {
+		min-width: 320px;
+		width: 100%;
+	}
+
+	#pagetitle h2 {
+		margin-left: 8px;
+	}
+
+	#pagecontent {
+		margin-left: 8px;
+	}
+
+	#mobilemenubutton {
+		display: block;
+		position: absolute;
+		left: 20px;
+		top: 50px;
+		height: 50px;
+		width: 50px;
+		overflow: hidden;
+		z-index: 9000;
+	}
+
+}
