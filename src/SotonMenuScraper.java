@@ -16,33 +16,41 @@ public class SotonMenuScraper {
     public static void main(String[] args) {
         try {
             SotonMenuScraper sms = new SotonMenuScraper();
+            sms.go();
         } catch (IOException e) {
             e.printStackTrace();
         }
+
 
 
     }
 
     public SotonMenuScraper() throws IOException {
         today = LocalDate.now();
-        // Here for weekend coding - remove from production
-        today = today.minusDays(1);
-        outlets = getVenuesURLs();
-        foods = new ArrayList<String>();
-        Iterator it = outlets.entrySet().iterator();
-        while(it.hasNext()){
-            Map.Entry<String, URL> entry = (Map.Entry<String, URL>)it.next();
-            foods.addAll(venueScraper(entry.getValue()));
-        }
-        it = foods.iterator();
-        //while(it.hasNext()){
-            //System.out.println(it.next());
-        //}
-        createCSV("themightycsvoffood.csv");
+
+        today = today.minusDays(1); // Here for weekend coding - remove from production
+
+
 
     }
 
-    // Creates URLs and stores them in outlets hasmap
+    // Generates the food csv
+    public void go(){
+        try {
+            outlets = getVenuesURLs();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        foods = new ArrayList<>();
+        Iterator it = outlets.entrySet().iterator();
+        while(it.hasNext()){
+            Map.Entry<String, URL> entry = (Map.Entry<String, URL>)it.next(); // map and hashmap not needed
+            foods.addAll(venueScraper(entry.getValue()));
+        }
+        createCSV("themightycsvoffood.csv");
+    }
+
+    // Creates URLs and stores them in outlets hashmap
     private HashMap<String, URL> getVenuesURLs() throws IOException {
         HashMap<String, URL> myOutlets = new HashMap<String, URL>();
         URL terraceURL = new URL("http://data.southampton.ac.uk/dumps/catering-daily-menu/" + today.toString() + "/todays-menu-38-terrace.csv");
@@ -146,6 +154,7 @@ public class SotonMenuScraper {
         }
     }
 
+    // Returns the arraylist of foods, locations prices for csv
     public ArrayList<String> getFoodList(){
         return foods;
     }

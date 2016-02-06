@@ -1,0 +1,29 @@
+pos,Section,Name,Vegetarian,Vegan,"Feature Celery","Feature Cereals Containing Gluten","Feature Crustaceans","Feature Eggs","Feature Fish","Feature Lupin","Feature 7","Feature 8","Feature Milk","Feature Molluscs","Feature Mustard","Feature Nuts","Feature Peanuts","Feature Sesame Seed","Feature Soya","Feature Sulphur Dioxide","Student Price","Staff Price"
+38-terrace,Soup,"White Onion and Thyme Soup",YES,,YES,,,,,,,,,,,,,,,,£2.25,£2.70
+38-terrace,"Main Meal","Macaroni Cheese",YES,,,YES,,YES,,,,,YES,,,,,,,,£2.75,£3.30
+38-terrace,"Main Meal","Battered Cod with Lemon Wedge",,,,YES,,,YES,,,,,,,,,,,YES,£2.75,£3.30
+38-terrace,"Main Meal","Lamb Navarin with Root Vegetables",,,YES,YES,,YES,,,,,YES,,YES,,,,YES,YES,£2.75,£3.30
+38-terrace,"Main Meal","Cuban Chimichurri Hot Dog
+with Brioche Roll",,,,YES,,YES,,,,,YES,,,YES,,,YES,,£2.75,£3.30
+38-terrace,Potato,Chips,YES,,,YES,,,,,,,,,,,,,,,£1.25,£1.50
+38-terrace,Potato,"Herb Vita Potatoes",YES,,,,,,,,,,,,,,,,,,£1.00,£1.20
+38-terrace,Potato,"Bowl of Chips",YES,,,YES,,,,,,,,,,,,,,,£1.50,£1.80
+38-terrace,Vegetables,Peas,YES,,,,,,,,,,,,,,,,,,80p,£1.00
+38-terrace,Vegetables,Swede,YES,,,,,,,,,,,,,,,,,,80p,£1.00
+38-terrace,Rice,"Steamed Rice",,,,,,,,,,,,,,,,,,,£1.50,£1.80
+38-terrace,"Hot Dessert","Bake Rhubarb and Rice Pudding
+with Custard",,,,,,YES,,,,,YES,,,,,,,,£1.65,£2.00
+38-terrace,"Cold Dessert","White Chocolate and Mango Mousse
+in a Tuille Biscuit",,,,YES,,YES,,,,,YES,,,,,,,,£1.65,£2.00
+38-terrace,"Cold Dessert","Peanut Halva",,,,YES,,,,,,,,,,YES,YES,,,,£1.65,£2.00
+38-terrace,"Cold Dessert","Chocolate Marquise",,,,,,YES,,,,,YES,,,,,,,,£1.65,£2.00
+38-arlott,"Soup of the Day","White Thyme and Onion",YES,,YES,YES,,,,,,,,,,,,,,,£2.40,£3.00
+38-arlott,"Jacket of the Day - Hot","Baked Beans",YES,YES,,,,,,,,,,,,,,,,,£3.25,£3.90
+38-arlott,"Jacket of the Day - Hot","Mixed Beans, Spinach and Tomato",YES,,,,,,,,,,,,,,,,,,£3.25,£3.90
+38-arlott,"Jacket of the Day - Hot","Hoi Sin Pork",,,,YES,,,,,,,,,YES,YES,YES,,YES,,£3.25,£3.90
+38-arlott,"Jacket of the Day - Cold","Tuna Mayonnaise",,,,,,YES,YES,,,,YES,,,,,,,,£3.25,£3.90
+38-arlott,"Jacket of the Day - Cold",Cheese,YES,,,,,,,,,,YES,,,,,,,,£3.25,£3.90
+38-arlott,"Jacket of the Day - Cold",Coleslaw,,,,,,YES,,,,,,,,,,,,,£3.25,£3.90
+38-arlott,Quiche,"Cheese and Broccoli",YES,,,YES,,YES,,,,,YES,,,,,,,,£2.80,£3.50
+38-arlott,Panini's,"Selection of Panini's Available
+(Allergen advice available on individual pack)",,,,,,,,,,,,,,,,,,,£3.00,£3.60

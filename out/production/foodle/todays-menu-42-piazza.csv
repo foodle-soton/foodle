@@ -1,0 +1,32 @@
+pos,Section,Name,Vegetarian,Vegan,"Feature Celery","Feature Cereals Containing Gluten","Feature Crustaceans","Feature Eggs","Feature Fish","Feature Lupin","Feature Lupins","Feature Milk","Feature Molluscs","Feature Mustard","Feature Nuts","Feature Peanuts","Feature Sesame Seed","Feature Soya","Feature Sulphates","Student Price","Staff Price"
+42-piazza,Soup,"Spicy Tomato Soup",YES,YES,YES,,,,,,,,,,,,,,,£2.25,£2.70
+42-piazza,"Street Food","Sweet and Sour Tofu",YES,,,,,,,,,YES,,,YES,,,,YES,£5.00,£6.00
+42-piazza,"Street Food","Thai Green Curry",,,,,YES,,,,,YES,,,YES,,,YES,,£5.00,£6.00
+42-piazza,"Street Food","Spring Rolls with Sweet Chilli Sauce",YES,,,YES,,YES,,,,YES,,,,,,YES,,£5.00,£6.00
+42-piazza,"Street Food","Rice
+(accompaniment to Street Food)",YES,YES,,,,,,,,,,,,,,,,,
+42-piazza,"Street Food","Shrimp Crackers
+(accompaniments to Street Food)",,,,,YES,,,,,,,,,,,,,,
+42-piazza,Joe's,"Piri Piri Chicken Skewer",,,,,,,,,,,,,,,,,,£3.00,£3.00
+42-piazza,Joe's,"Fajita Chicken Thigh",,,,,,,,,,,,,,,,,,£3.00,£3.00
+42-piazza,Joe's,"Flat Bread",YES,,,YES,,,,,,YES,,,,,,YES,,,
+42-piazza,Joe's,"Floured Tortilla Wrap",YES,,,YES,,,,,,,,,,,,,,,
+42-piazza,"Fish Bar","Battered Cod",,,,YES,,,YES,,,YES,,YES,,,,YES,YES,£3.25,£3.90
+42-piazza,"Fish Bar","Jumbo Battered Sausage",,,,YES,,,,,,YES,,YES,,,,YES,,£2.00,£2.40
+42-piazza,"Fish Bar","Salmon and Dill Fish Cake",,,,,,YES,YES,,,YES,,,,,,,,£2.75,£3.30
+42-piazza,"Fish Bar","Curry Sauce",,,,YES,,YES,,,,YES,,YES,,,,YES,,80p,£1.00
+42-piazza,"Fish Bar","Pea Fritter",,,,YES,,,,,,YES,,YES,,,,YES,YES,80p,£1.00
+42-piazza,"Burger with Bap","Chicken Burger",,,YES,YES,,YES,,,,,,YES,,,YES,,,£2.50,£2.80
+42-piazza,"Burger with Bap","Beef Burger",,,,YES,,YES,,,,,,,,,YES,YES,,£2.50,£2.80
+42-piazza,Potato,"Vita Potatoes",YES,YES,,,,,,,,,,,,,,,,£1.00,£1.20
+42-piazza,Potato,"Chips - with meal",YES,,YES,,,,,,,,,,,,,,YES,£1.25,£1.50
+42-piazza,Potato,"Curly Fries - with meal",YES,,YES,YES,,,,,,,,,,,,,YES,£1.25,£1.50
+42-piazza,Potato,"Bowl of Chips",YES,,YES,,,,,,,,,,,,,,YES,£1.50,£1.80
+42-piazza,Potato,"Bowl of Curly Fries",YES,,YES,YES,,,,,,,,,,,,,YES,£1.50,£1.80
+42-piazza,Vegetables,Peas,YES,YES,,,,,,,,,,,,,,,,80p,£1.00
+42-piazza,Vegetables,Carrots,YES,YES,,,,,,,,,,,,,,,YES,80p,£1.00
+42-piazza,Pizza,"See Separate Allergen Sheet",,,,,,,,,,,,,,,,,,,
+42-piazza,"Jacket of the Day - Hot",Chilli,,,YES,YES,,,,,,,,YES,YES,,,,YES,£3.25,£3.90
+42-piazza,"Jacket of the Day - Hot","Baked Beans",YES,,YES,,,,,,,,,,,,,,YES,£3.25,£3.90
+42-piazza,"Jacket of the Day - Cold","Tuna Mayonnaise",,,YES,,,YES,YES,,,,,,,,,,,£3.25,£3.90
+42-piazza,"Jacket of the Day - Cold","Grated Mature Cheddar",YES,,,,,,,,,YES,,,,,,,,£3.25,£3.90

@@ -1,15 +1,2 @@
-.idea/.name
-.idea/workspace.xml
-.idea/uiDesigner.xml
-src/todays-menu-42-piazza.xls.1.csv
-src/todays-menu-42-piazza.xls
-src/todays-menu-38-terrace.csv
-out/production/foodle/TempArlott_files/menu.png
-.idea/misc.xml
-.idea/copyright/profiles_settings.xml
-out/production/foodle/TempPiazza.html
-out/production/foodle/TempPiazza_files/menu.png
-.idea/compiler.xml
-.idea/encodings.xml
-out/production/foodle/TempArlott_files/arlott-starbucks.jpg
-out/production/foodle/TempArlott.html
+.idea/*
+foodle.iml
