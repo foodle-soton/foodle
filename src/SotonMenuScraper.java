@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.util.*;
 
 public class SotonMenuScraper {
+    private static boolean debugMode = false;
 
     private HashMap<String, URL> outlets;
     private ArrayList<String> foods;
@@ -12,6 +13,12 @@ public class SotonMenuScraper {
     // TODO: Exceptions are a mess
     // Main method
     public static void main(String[] args) {
+        if (args.length > 0) {
+            if (args[0].equals("debug")) {
+                debugMode = true;
+            }
+        }
+
         try {
             SotonMenuScraper sms = new SotonMenuScraper();
             sms.go();
@@ -154,7 +161,7 @@ public class SotonMenuScraper {
                 out = out.replaceAll(" - Cold", "");
                 out = out.replaceAll("- with meal", "(with meal)"); // Fill in wanted brackets
                 csv.println(out);
-                System.out.println(out);
+                if (debugMode) System.out.println(out);
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
