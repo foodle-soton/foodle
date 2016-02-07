@@ -98,10 +98,10 @@ public class SotonMenuScraper {
             }
 
         } catch (FileNotFoundException e) {
-            System.err.println("The URL for the menu broke, error 404?");
+            System.err.println("[ERROR] The URL for the menu broke, error 404?");
             e.printStackTrace();
         } catch (MalformedURLException e) {
-            System.err.println("The URL for the menu broke, error 404?");
+            System.err.println("[ERROR] The URL for the menu broke, error 404?");
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
@@ -163,6 +163,7 @@ public class SotonMenuScraper {
                 csv.println(out);
                 if (debugMode) System.out.println(out);
             }
+            System.out.println("[ OK ] Operation completed successfully.");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
