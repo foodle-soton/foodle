@@ -8,7 +8,9 @@ public class SotonMenuScraper {
     private HashMap<String, URL> outlets;
     private ArrayList<String> foods;
     private LocalDate today;
+
     // TODO: Exceptions are a mess
+    // Main method
     public static void main(String[] args) {
         try {
             SotonMenuScraper sms = new SotonMenuScraper();
@@ -18,19 +20,26 @@ public class SotonMenuScraper {
         }
     }
 
+    // Scraper constructor - sets date
     public SotonMenuScraper() throws IOException {
+        foods = new ArrayList<String>();
         today = LocalDate.now();
-        today = today.minusDays(2); // Here for weekend coding - remove from production
+
+        // Here for weekend coding - uses friday's dataset
+        if (today.getDayOfWeek().toString().equals("SATURDAY")) {
+            today = today.minusDays(1);
+        } else if (today.getDayOfWeek().toString().equals("SUNDAY")) {
+            today = today.minusDays(2);
+        }
     }
 
-    // Generates the food csv
+    // Generates the food CSV
     public void go(){
         try {
             outlets = getVenuesURLs();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        foods = new ArrayList<>();
         Iterator it = outlets.entrySet().iterator();
         while(it.hasNext()){
             Map.Entry<String, URL> entry = (Map.Entry<String, URL>)it.next(); // map and hashmap not needed
@@ -44,8 +53,12 @@ public class SotonMenuScraper {
         HashMap<String, URL> myOutlets = new HashMap<String, URL>();
         URL terraceURL = new URL("http://data.southampton.ac.uk/dumps/catering-daily-menu/" + today.toString() + "/todays-menu-38-terrace.csv");
         URL piazzaURL = new URL("http://data.southampton.ac.uk/dumps/catering-daily-menu/" + today.toString() + "/todays-menu-42-piazza.csv");
+        URL cafeURL = new URL("http://data.southampton.ac.uk/dumps/catering-daily-menu/" + today.toString() + "/todays-menu-63A-cafe.csv");
+        URL avenueURL = new URL("http://data.southampton.ac.uk/dumps/catering-daily-menu/" + today.toString() + "/todays-menu-65-avenue.csv");
         myOutlets.put("Terrace", terraceURL);
         myOutlets.put("Piazza", piazzaURL);
+        myOutlets.put("Cafe", cafeURL);
+        myOutlets.put("Avenue", avenueURL);
         return myOutlets;
     }
 
@@ -71,7 +84,7 @@ public class SotonMenuScraper {
                 foodVenue = getFoodVenue(nowLine);
                 if(!foodPrice.equals("")) {
                     outputLine = foodVenue + "," + foodCategory + "," + foodName + "," + foodPrice;
-                    //System.err.println(outputLine);
+                    //System.err.println(outputLine); // DEBUG
                     foods.add(outputLine);
                 }
 
@@ -152,7 +165,5 @@ public class SotonMenuScraper {
     public ArrayList<String> getFoodList(){
         return foods;
     }
-
-
 
 }
