@@ -1,12 +1,8 @@
 import java.io.*;
-import java.net.MalformedURLException;
-import java.net.URL;
+import java.net.*;
 import java.time.LocalDate;
 import java.util.*;
 
-/**
- * Created by Will on 05/02/2016.
- */
 public class SotonMenuScraper {
 
     private HashMap<String, URL> outlets;
@@ -20,18 +16,11 @@ public class SotonMenuScraper {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
-
     }
 
     public SotonMenuScraper() throws IOException {
         today = LocalDate.now();
-
-        today = today.minusDays(1); // Here for weekend coding - remove from production
-
-
-
+        today = today.minusDays(2); // Here for weekend coding - remove from production
     }
 
     // Generates the food csv
@@ -47,7 +36,7 @@ public class SotonMenuScraper {
             Map.Entry<String, URL> entry = (Map.Entry<String, URL>)it.next(); // map and hashmap not needed
             foods.addAll(venueScraper(entry.getValue()));
         }
-        createCSV("themightycsvoffood.csv");
+        createCSV("data.csv");
     }
 
     // Creates URLs and stores them in outlets hashmap
@@ -89,10 +78,10 @@ public class SotonMenuScraper {
             }
 
         } catch (FileNotFoundException e) {
-            System.err.println("The URL for the menu broke");
+            System.err.println("The URL for the menu broke, error 404?");
             e.printStackTrace();
         } catch (MalformedURLException e) {
-            System.err.println("The URL for the menu broke");
+            System.err.println("The URL for the menu broke, error 404?");
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
@@ -143,11 +132,16 @@ public class SotonMenuScraper {
         try {
             PrintStream csv = new PrintStream(fileName);
             while(it.hasNext()){
-                String myStr = it.next();
-                csv.println(myStr);
-                System.out.println(myStr);
-
-
+                String out = it.next();
+                // Clean up the data before it goes into the CSV file
+                out = out.replace("£", "");
+                out = out.replace("\"", "");
+                out = out.replaceAll("\\((.*?)\\)", ""); // Remove anything in brackets (we don't want anything currently)
+                out = out.replaceAll(" - Hot", ""); // Remove hot and cold options (group as one)
+                out = out.replaceAll(" - Cold", "");
+                out = out.replaceAll("- with meal", "(with meal)"); // Fill in wanted brackets
+                csv.println(out);
+                System.out.println(out);
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
